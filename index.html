@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -31,32 +32,90 @@
         </section>
 
         <nav>
-            <ul id="nav-items">
-                <li class="nav-list"><a href="https://preview.colorlib.com/#health" target="_blank">HOME</a></li>
-                <li class="nav-list"><a href="https://preview.colorlib.com/#health" target="_blank">ABOUT US</a></li>
+            <ul class="nav-items">
+                <li class="nav-list"><a href="home.html" target="_blank">HOME</a></li>
+                <li class="nav-list"><a href="about.html" target="_blank">ABOUT</a></li>
                 <li class="nav-list"><a href="https://preview.colorlib.com/#health" target="_blank">SERVICES</a></li>
                 <li class="nav-list"><a href="https://preview.colorlib.com/#health" target="_blank">NEWS</a></li>
                 <li class="nav-list"><a href="https://preview.colorlib.com/#health" target="_blank">CONTACTS</a></li>
             </ul>
 
             <div>
-                <form class="menu-search-form">
-                    <input type="text" class="menu-search input" placeholder="Search">
-                    <button class="menu-search-button" Search>
-                        <i class="fa fa-search"></i>
-                    </button>
+                <form class="form">
+                    <input type="text" name="search" placeholder="Search.." class="search">
+                    <i class="fa fa-search"></i>
                 </form>
             </div>
         </nav>
 
-        <section>
-            <div class="home_title">Medical Services that you can trust</div>
-            <p class="hero-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
+        <section class="hero">
+            <div class="hero-info">
+                <h2>Medical Services that you can trust</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
                     scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
                 <button>READ MORE</button>
+            </div>
         </section>
     </header>
 
+
+    <section class="main-container">
+        <div>
+            <div class="flex-container">
+                <div class="img-container">
+                    <img src="assets/images/info_1.jpg.webp" alt="images">
+                </div>
+                <div>
+                    <h2>Free Consultations</h2>
+                    <p>Arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas
+                        finibus,
+                        dolor risus mollis</p>
+                    <a href="#" target="_blank">READ MORE</a>
+                </div>
+
+                <div class="img-container">
+                    <img src="assets/images/info_2.jpg.webp" alt="images">
+                </div>
+                <div>
+                    <h2>Emergency Care</h2>
+                    <p>Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas
+                        finibus, dolor risus.</p>
+                    <a href="#" target="_blank">READ MORE</a>
+                </div>
+            </div>
+
+            <div class="make-appointment">
+                <h2>Make an Appointment</h2>
+                <div>
+                    <form action="/action_page.php">
+                        <label for="department">Department</label>
+                        <select id="department" name="department">
+                            <option value="opd">OPD</option>
+                            <option value="maternal">Maternal Care</option>
+                            <option value="physiotherapy">Physiotherapy</option>
+                        </select>
+
+                        <label for="doctor">Doctor</label>
+                        <select id="doctor" name="doctor">
+                            <option value="dietician">Dietician</option>
+                            <option value="oncologist">Oncologist</option>
+                            <option value="physiotherapist">Physiotherapist</option>
+                        </select>
+
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="fullname" placeholder="Your full name.." class="input-form">
+
+                        <label for="pnumber">Phone Number</label>
+                        <input type="text" id="pnumber" name="pnumber" placeholder="Your number.." class="input-form">
+
+                        <input type="submit" value="Make an appointment" class="appointment">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
 
 </body>
 
