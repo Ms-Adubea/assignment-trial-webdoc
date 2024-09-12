@@ -39,14 +39,14 @@ header {
 }
 
 .head-list:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 20px; /* Adjust height as needed */
-    background-color: #ccc; /* Light gray color for the vertical line */
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
 }
 
 .head-list a {
@@ -74,7 +74,6 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 42.5px;
   line-height: 30px;
   outline: 0;
@@ -86,47 +85,49 @@ nav {
 }
 
 .fa fa-search {
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: #07051a;
-    text-align: center;
-    font-size: 1.2rem;
-    transform: all 1s;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2rem;
+  transform: all 1s;
 }
 
 .form {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    transition: all 0.5s;
-    width: 100%;
-    height: 100%;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid whitesmoke;
-    padding: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid whitesmoke;
+  padding: 5px;
 }
 
 .form:hover {
-    width: 300px;
-    cursor: pointer;
+  width: 300px;
+  cursor: pointer;
 }
 
 .form:hover.search {
-    display: block;
+  display: block;
 }
 
 .form :hover .fa fa-search {
-background: #07051a;
-color: white;
+  background: #07051a;
+  color: white;
 }
 
 .nav-items {
@@ -163,6 +164,7 @@ color: white;
   color: white;
   margin-top: 2rem;
   width: 29%;
+  text-shadow: 1px 1px #40ADCE;
 }
 
 .hero {
@@ -170,10 +172,12 @@ color: white;
   padding-left: 4.2rem;
   margin-top: 14rem;
 }
+
 .hero-info h2 {
   font-size: 45px;
   color: white;
   width: 30%;
+  text-shadow: 2px 2px #40ADCE
 }
 
 .hero-info button {
@@ -189,15 +193,77 @@ color: white;
 }
 
 .main-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 10px;
+  grid-column-gap: 50px;
   grid-row-gap: 0px;
+}
+
+.img-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #404040;
+}
+
+.img-container p {
+  color: #6B6767;
+  margin-bottom: 1rem;
+}
+
+.img-container a {
+  color: #8e0108;
+  margin-bottom: 1rem;
 }
 
 .img-container img {
   width: 100%;
+}
+
+.img-container button {
+  background-color: brown;
+  color: white;
+  border: none;
+  width: 35%;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.img-container button:hover {
+  background-color: rgb(185, 49, 49);
+  color: black;
+  font-weight: 700;
+}
+
+.department {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.doctor {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .input-form {
@@ -219,15 +285,87 @@ color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .appointment:hover {
   background-color: rgb(185, 49, 49);
   color: black;
+  font-weight: 700;
 }
 
 .make-appointment {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.call-now-section {
+  background-image: url(../images/emergency.jpg);
+  filter: blur(5px);
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  background-position: center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.call-now-item {
+ align-content: center;
+  background-color: #7cb5cb48;
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 290%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.third-section {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+   justify-content: center;
+}
+
+.call-now-item h2 {
+  font-size: 30pt;
+  color: white;
+  margin-left: 10%;
+  text-shadow: 2px 2px brown;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.call-now-item p {
+  font-size: 15pt;
+  color: white;
+  margin-left: 10%;
+  text-shadow: 1px 1px black;
+  margin-bottom: 1rem;
+}
+
+.call-now-item button {
+  background-color: brown;
+  color: white;
+  border: none;
+  width: 9%;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 50%;
+  display: block;
+  font-size: 14px;
+}
+
+.call-now-item button:hover {
+  background-color: rgb(185, 49, 49);
+  color: black;
+  font-weight: 700;
 }
