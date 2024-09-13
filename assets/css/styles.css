@@ -329,3 +329,35 @@ nav {
   color: black;
   font-weight: 700;
 }
+
+.our-department-container {
+  box-sizing: border-box;
+}
+
+.our-department-item {
+  border: 1px solid #ccc;
+}
+
+.our-department-item:hover {
+border: 1px solid #777;
+}
+
+.our-department-item img {
+  width: 100%;
+  height: auto;
+}
+
+.our-department-item h2 {
+  padding: 15px;
+  text-align: center;
+}
+
+.our-department-item a {
+  text-decoration: none;
+}
+
+.our.department {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
