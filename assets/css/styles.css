@@ -142,8 +142,8 @@ nav {
 .hero-info button {
   font-size: 14px;
   font-weight: 600;
-  color: #8e0108;
-  background-color: #d2c864;
+  color: white;
+  background-color: #8e0108;
   margin-top: 2rem;
   border: none;
   border-radius: 5%;
@@ -154,7 +154,7 @@ nav {
 .main-container {
   width: 100%;
   min-height: 100vh;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .flex-container {
@@ -166,6 +166,17 @@ nav {
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 0px;
+}
+
+.img-container {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
 }
 
 .img-container h2 {
@@ -256,7 +267,7 @@ nav {
 
 .make-appointment {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
   padding: 20px;
 }
 
@@ -331,33 +342,67 @@ nav {
 }
 
 .our-department-container {
-  box-sizing: border-box;
+  background-color: whitesmoke;
+  padding-top: 90px;
+}
+
+.our-department-container h2 {
+  text-align: center;
+  font-size: 20pt;
+}
+
+.our-department-container p {
+  text-align: center;
+  font-size: 13pt;
+  padding-top: 0.5rem;
+  color: #6B6767;
 }
 
 .our-department-item {
-  border: 1px solid #ccc;
-}
-
-.our-department-item:hover {
-border: 1px solid #777;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .our-department-item img {
   width: 100%;
-  height: auto;
+  border-radius: 10%;
 }
 
-.our-department-item h2 {
-  padding: 15px;
+.our-department-text {
+  padding: 0 16px;
+}
+
+.our-department-text-button {
+  /* border: none; */
+  padding: 8px;
+  color: white;
+  background-color: #8e0108;
   text-align: center;
+  cursor: pointer;
+  width: 50%;
 }
 
-.our-department-item a {
+.our-department-text a {
   text-decoration: none;
+  color: white;
 }
 
-.our.department {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+.our-department-text-button :hover {
+  background-color: rgb(185, 49, 49);
+  color: black;
+  font-weight: 700;
 }
+
+.our-d {
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+}
+
+/* .our-department-container :hover {
+  box-shadow: 10px 10px 5px lightblue;
+} */
