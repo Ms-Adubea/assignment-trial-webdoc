@@ -118,11 +118,15 @@ nav {
   padding: 15px;
 }
 
+.hero-info {
+  padding-top: 12%;
+}
+
 .hero-info p {
-  font-size: 25px;
+  font-size: 35px;
   color: white;
   margin-top: 2rem;
-  width: 29%;
+  width: 100%;
   text-shadow: 1px 1px #40ADCE;
 }
 
@@ -135,8 +139,9 @@ nav {
 .hero-info h2 {
   font-size: 45px;
   color: white;
-  width: 30%;
-  text-shadow: 2px 2px #40ADCE
+  width: 85%;
+  text-shadow: 2px 2px #40ADCE;
+  text-align: center;  
 }
 
 .hero-info button {
@@ -147,7 +152,7 @@ nav {
   margin-top: 2rem;
   border: none;
   border-radius: 5%;
-  width: 8%;
+  width: 15%;
   height: 8vh;
 }
 
@@ -215,6 +220,36 @@ nav {
   background-color: rgb(185, 49, 49);
   color: black;
   font-weight: 700;
+}
+
+.confirmation-message {
+  display: none;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#bookingDate {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#bookingTime {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .department {

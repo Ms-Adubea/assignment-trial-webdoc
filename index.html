@@ -49,9 +49,8 @@
 
         <section class="hero">
             <div class="hero-info">
-                <h2>Medical Services that you can trust</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
-                    scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</p>
+                <h2>Welcome to Bebé & Mamá Health Center</h2>
+                <p>Providing quality healthcare for mothers and babies</p>
                 <button>READ MORE</button>
             </div>
         </section>
@@ -81,7 +80,15 @@
             <div class="make-appointment">
                 <h2>Make an Appointment</h2>
                 <div>
-                    <form action="/action_page.php">
+                    <form id="bookingForm">
+                        <input type="date" id="bookingDate" required>
+                        <select id="bookingTime" required>
+                            <option value="">Select a time</option>
+                            <option value="">9am</option>
+                            <option value="">11am</option>
+                            <option value="">1pm</option>
+                            <option value="">3pm</option>
+                        </select>
                         <label for="department">Department</label>
                         <select id="department" name="department" class="department">
                             <option value="opd">OPD</option>
@@ -108,6 +115,7 @@
             </div>
         </div>
         </div>
+        <div id="confirmationMessage" class="confirmation-message"></div>
     </section>
 
     <section class="third-section">
@@ -133,38 +141,38 @@
                     </div>
                 </div>
             </div>
-        
 
-        <div class="our-department">
-            <div class="our-department-item">
-                <img src="assets/images/dent11.jpg" alt="Dentistry">
-                <div class="our-department-text">
-                    <h2>Dentistry</h2>
-                    <button class="our-department-text-button"><a href="#" target="_blank">Read more</a></button>
+
+            <div class="our-department">
+                <div class="our-department-item">
+                    <img src="assets/images/dent11.jpg" alt="Dentistry">
+                    <div class="our-department-text">
+                        <h2>Dentistry</h2>
+                        <button class="our-department-text-button"><a href="#" target="_blank">Read more</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-department">
+                <div class="our-department-item">
+                    <img src="assets/images/mama1.jpg" alt="ob-gyn">
+                    <div class="our-department-text">
+                        <h2>OB-GYN</h2>
+                        <button class="our-department-text-button"><a href="#" target="_blank">Read more</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="our-department">
+                <div class="our-department-item">
+                    <img src="assets/images/lab3.jpg" alt="Laboratory">
+                    <div class="our-department-text">
+                        <h2>Laboratory</h2>
+                        <button class="our-department-text-button"><a href="#" target="_blank">Read more</a></button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="our-department">
-            <div class="our-department-item">
-                <img src="assets/images/mama1.jpg" alt="ob-gyn">
-                <div class="our-department-text">
-                    <h2>OB-GYN</h2>
-                    <button class="our-department-text-button"><a href="#" target="_blank">Read more</a></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="our-department">
-            <div class="our-department-item">
-                <img src="assets/images/lab3.jpg" alt="Laboratory">
-                <div class="our-department-text">
-                    <h2>Laboratory</h2>
-                    <button class="our-department-text-button"><a href="#" target="_blank">Read more</a></button>
-                </div>
-            </div>
-        </div>
-    </div>
     </section>
 
     <footer>
